@@ -7,9 +7,9 @@ const { DetectFaceExtract } = require("../functions/faceRecognition.js");
 
 router.post("/face", async function (req, res) {
   console.log(req.body);
-  const { photo } = req.body;
-  console.log(photo.toString());
-  await DetectFaceExtract(photo);
+  const { blob } = req.body;
+  //console.log(photo.toString());
+  await DetectFaceExtract(blob);
 });
 
 module.exports = router;

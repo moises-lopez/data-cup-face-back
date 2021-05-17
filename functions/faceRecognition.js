@@ -30,7 +30,6 @@ async function DetectFaceExtract(photo) {
     "detection5.jpg", // family, woman child man
     "detection6.jpg", // elderly couple, male female
   ];
-  console.log(photo.toString());
   // NOTE await does not work properly in for, forEach, and while loops. Use Array.map and Promise.all instead.
   await Promise.all(
     image_file_names.map(async function (image_file_name) {
